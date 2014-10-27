@@ -1,10 +1,14 @@
 package
 {
+	import screens.Welcome;
+	
 	import starling.display.Sprite;
 	import starling.events.Event;
 	
 	public class Game extends Sprite
 	{
+		private var screenWelcome:Welcome;
+		
 		public function Game()
 		{
 			super();
@@ -15,6 +19,8 @@ package
 		{
 			// TODO Auto Generated method stub
 			
+			screenWelcome = new Welcome();
+			this.addChild(screenWelcome);
 		}
 	}
 }
