@@ -38,7 +38,9 @@ package
 			{
 				var texture:Texture = getTexture("AtlasTextureGame");
 				var xml:XML = XML(new AtlasXmlGame());
+				gameTextureAtlas = new TextureAtlas(texture, xml);
 			}
+			return gameTextureAtlas;
 		}
 		
 		public static function getTexture(name:String):Texture
